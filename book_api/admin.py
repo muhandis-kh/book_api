@@ -10,12 +10,12 @@ class AuthorAdmin(admin.ModelAdmin):
 
 @admin.register(FileBook)
 class BookAdmin(admin.ModelAdmin):
-    list_display = ('name', 'id', 'status', 'file_link', 'file_size')
+    list_display = ('document_filename', 'id', 'status', 'file_link',)
     list_filter = ('status', 'created_at')
     list_editable = ('status', 'file_link')
 
 @admin.register(AudioBook)
 class BookAdmin(admin.ModelAdmin):
-    list_display = ('name', 'id', 'status', 'audio_link', 'audio_size')
+    list_display = ('document_filename', 'id', 'status', 'audio_link',)
     list_filter = ('status', 'created_at')
     list_editable = ('status', 'audio_link')
