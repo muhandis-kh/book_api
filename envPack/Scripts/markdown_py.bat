@@ -1,0 +1,1 @@
+@"C:\Users\User\Desktop\book_api\envPack\Scripts\python.exe" "C:\Users\User\Desktop\book_api\envPack\Scripts\markdown_py" %*
