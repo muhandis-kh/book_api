@@ -1,3 +1,0 @@
-1. Audio, file, apk uchun alohida tablelar yaratish
-2. table larga fayl turi bo'yicha qo'shish
-3. application lar uchun fayl turlari bo'yicha alohida tablelar yaratish

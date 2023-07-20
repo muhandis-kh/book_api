@@ -1,5 +1,7 @@
 from django.db import models
 from autoslug import AutoSlugField
+from django.contrib.postgres.search import SearchVectorField, SearchVector
+
 class Author(models.Model):
     full_name = models.CharField(max_length=255, verbose_name="Muallif nomi")
     status = models.BooleanField(default=True, verbose_name="Holati")
@@ -18,6 +20,7 @@ class FileBook(models.Model):
     document_filename = models.CharField(max_length=255, verbose_name="Document Nomi")
     slug  = AutoSlugField(populate_from="document_filename", unique=True)
     description = models.TextField(verbose_name="Kitob nomii")
+    description_tsvector = SearchVectorField(null=True)
     author = models.ForeignKey(Author, blank=True, null=True, on_delete=models.SET_NULL, related_name='file_book')
     file_link = models.CharField(max_length=255, verbose_name="Kitob file linki", blank=True, null=True)
     channel_name = models.CharField(max_length=255, verbose_name="Kanal nomi")
@@ -26,6 +29,13 @@ class FileBook(models.Model):
     status = models.BooleanField(default=True, verbose_name="Holati")
     created_at = models.DateTimeField(auto_now=True)
     
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+
+        self.__class__.objects.filter(id=self.id).update(
+            description_tsvector=SearchVector(f"to_tsvector('simple', '{self.description}')")
+        )
+    
     class Meta:
         verbose_name = "File Kitob"
         verbose_name_plural = "File Kitoblar"
@@ -33,7 +43,7 @@ class FileBook(models.Model):
         
     def __str__(self):
         return self.name
-    
+        
 class AudioBook(models.Model):
     document_filename = models.CharField(max_length=255, verbose_name="Document Nomi")
     slug  = AutoSlugField(populate_from="document_filename", unique=True)

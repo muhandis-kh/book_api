@@ -1,12 +1,18 @@
 from django.urls import path, include
 from rest_framework import routers
-from .views import FileBookViewset, AudioBookViewset, AuthorViewset
+from config import settings
+from .views import FileBookViewset, AudioBookViewset, AuthorViewset, FileBookListView, AudioBookListView
 
-router = routers.DefaultRouter()
+if settings.DEBUG:
+    router = routers.DefaultRouter()
+else:
+    router = routers.SimpleRouter()
 
 router.register('file-book-api', FileBookViewset)
 router.register('audio-book-api', AudioBookViewset)
 router.register('author-api', AuthorViewset)
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls)),
+    path('files', FileBookListView.as_view(), name='files'),
+    path('audios', AudioBookListView.as_view(), name='audios')
 ]
