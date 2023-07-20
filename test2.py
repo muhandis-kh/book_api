@@ -34,7 +34,7 @@ alphabet = "latin"
 # """"""""""""""""""""""""""""""""""""""""""""""""
 
 lent = 1
-with open(r"C:\Users\User\Desktop\vkm_book_bot\veriler.csv", newline='', encoding="utf8") as csvfile:
+with open(r"C:\Users\User\Desktop\telegram-channel scrap data\telegram-tracker\output-vkb_baza_audio\data\msgs_dataset.csv", newline='', encoding="utf8") as csvfile:
     spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
     reader = csv.DictReader(csvfile)
     # connection = psycopg2.connect(user="postgres",
@@ -45,7 +45,7 @@ with open(r"C:\Users\User\Desktop\vkm_book_bot\veriler.csv", newline='', encodin
 
     totalrows = 681661
     basliklar = ['id', 'document_filename', 'description', 'type', 'file_link', 'channel_name']
-    with open('data_files.csv', 'w', encoding="utf8", newline='') as dosya:
+    with open('data_audios.csv', 'w', encoding="utf8", newline='') as dosya:
         yazici = csv.writer(dosya)
         yazici.writerow(basliklar)
         
@@ -58,11 +58,15 @@ with open(r"C:\Users\User\Desktop\vkm_book_bot\veriler.csv", newline='', encodin
             
                             document_filename = row['document_filename'].replace(msg, '')
                             
-                    message = row['description']
+                    message = row['message']
                     
-                    if Find(row['description']):
-                        for msg in Find(row['description']):  
-                            message = message.replace(msg, '')    
+                    if Find(row['message']):
+                        for msg in Find(row['message']):  
+                            if msg.startswith('@'):
+                                manba = msg
+                                pass
+                            else:  
+                                    message = message.replace(msg, '')     
                         try:
                             message = message.replace("👉", '')
                             message = message.replace("Kanalimiz:", '')
@@ -86,7 +90,7 @@ with open(r"C:\Users\User\Desktop\vkm_book_bot\veriler.csv", newline='', encodin
                         except:
                             pass
                     
-                    caption = f"{message[:300]} \n\n🗂️ Manba: @{row['channel_name']} kanali"
+                    caption = message
                     try:
                         if has_cyrillic(document_filename):
                             result = korrektor.transliterate(alphabet, document_filename)
@@ -104,7 +108,7 @@ with open(r"C:\Users\User\Desktop\vkm_book_bot\veriler.csv", newline='', encodin
                     
                     # cursor = connection.cursor()
                     try:
-                        secilen_sutunler = [row['id'], row['document_filename'], row['description'], 'doc', row['file_link'], row['channel_name']]
+                        secilen_sutunler = [row['signature'], row['document_filename'], row['message'], 'audio', row['msg_link'], manba]
                         yazici.writerow(secilen_sutunler)
                         # file = FileBook.objects.create(document_filename=document_filename, description=caption, author=1, type=row['type'], category=None, photo=None, file_link=row['file_link'], channel_name=row['channel_name'], download_count=0 )
                         
