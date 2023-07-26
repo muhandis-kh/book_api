@@ -9,6 +9,7 @@ import datetime
 from book_api.models import Author
 from django.http import HttpResponse
 import logging
+from data import data
 
 def has_cyrillic(text):
     return bool(re.search('[а-яА-Я]', text))
@@ -25,7 +26,7 @@ def Find(string):
 
 from korrektor_py import Korrektor
 
-TOKEN = "v3l4a5e3b485r3f5x35565y534v2f4r595s4e3w3h5v3x475t3u273o315p3u2y2"
+TOKEN = data.korrektor_token
 korrektor = Korrektor(TOKEN)
 import csv
 

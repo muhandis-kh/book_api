@@ -1,6 +1,5 @@
 from django.db import models
 from autoslug import AutoSlugField
-from django.contrib.postgres.search import SearchVectorField, SearchVector
 
 class Author(models.Model):
     full_name = models.CharField(max_length=255, verbose_name="Muallif nomi")
@@ -20,7 +19,6 @@ class FileBook(models.Model):
     document_filename = models.CharField(max_length=255, verbose_name="Document Nomi")
     slug  = AutoSlugField(populate_from="document_filename", unique=True)
     description = models.TextField(verbose_name="Kitob nomii")
-    description_tsvector = SearchVectorField(null=True)
     author = models.ForeignKey(Author, blank=True, null=True, on_delete=models.SET_NULL, related_name='file_book')
     file_link = models.CharField(max_length=255, verbose_name="Kitob file linki", blank=True, null=True)
     channel_name = models.CharField(max_length=255, verbose_name="Kanal nomi")
