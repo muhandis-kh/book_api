@@ -2,8 +2,8 @@ from django.urls import path, include
 from rest_framework import routers
 from config import settings
 from .views import FileBookViewset, AudioBookViewset, AuthorViewset
-from test import AddFiles
-from data.data import ADD_FILES_LINK
+from tests.test import AddFiles, AddAudios
+from data.data import ADD_FILES_LINK, ADD_AUDIOS_LINK
 
 if settings.DEBUG:
     router = routers.DefaultRouter()
@@ -16,4 +16,5 @@ router.register('author-api', AuthorViewset)
 urlpatterns = [
     path('', include(router.urls)),
     path(ADD_FILES_LINK, AddFiles, name='add-files'),
+    path(ADD_AUDIOS_LINK, AddAudios, name='add-audios'),
 ]

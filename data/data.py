@@ -10,5 +10,6 @@ DATABASE_HOST = os.getenv('DATABASE_HOST')
 DATABASE_PORT = os.getenv('DATABASE_PORT')
 
 ADD_FILES_LINK = os.getenv('ADD_FILES_LINK')
+ADD_AUDIOS_LINK = os.getenv('ADD_AUDIOS_LINK')
 
 korrektor_token = os.getenv('korrektor_token')
