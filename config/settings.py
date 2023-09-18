@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.postgres',
     # globals 
     'rest_framework',
+    'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
     'django_filters',
     'drf_yasg',
     
@@ -93,6 +95,18 @@ DATABASES = {
         'PORT': data.DATABASE_PORT,
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'book_api',
+#         'USER': 'postgres',
+#         'PASSWORD': 'obidcan124578',
+#         'HOST': localhost,
+#         'PORT': data.DATABASE_PORT,
+#     }
+# }
+
 
 
 # Password validation
@@ -150,5 +164,8 @@ REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_RATES': {
         'anon': '10/second',
         'user': '10/second'
-    }
+    },
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
 }

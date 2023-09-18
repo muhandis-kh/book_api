@@ -12,4 +12,7 @@ DATABASE_PORT = os.getenv('DATABASE_PORT')
 ADD_FILES_LINK = os.getenv('ADD_FILES_LINK')
 ADD_AUDIOS_LINK = os.getenv('ADD_AUDIOS_LINK')
 
+DOCUMENT_FILES = os.getenv('DOCUMENT_FILES')
+AUDIO_FILES = os.getenv('AUDIO_FILES')
+
 korrektor_token = os.getenv('korrektor_token')
