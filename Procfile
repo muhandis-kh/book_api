@@ -1,1 +1,1 @@
-web: gunicorn "config.wsgi" application --debug
+web: gunicorn "config.wsgi" --debug
