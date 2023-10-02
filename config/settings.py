@@ -28,6 +28,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://bookapi-production-9bb1.up.railway.app'
+]
 
 # Application definition
 
