@@ -1,1 +1,1 @@
-web: gunicorn "book_api.wsgi"
+web: gunicorn "config.wsgi"
