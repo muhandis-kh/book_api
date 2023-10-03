@@ -1,1 +1,1 @@
-web: gunicorn "config.wsgi" --debug
+web: gunicorn "config.wsgi" --timeout 99999999
