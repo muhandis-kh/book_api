@@ -18,3 +18,5 @@ AUDIO_FILES = os.getenv('AUDIO_FILES')
 korrektor_token = os.getenv('korrektor_token')
 
 django_secret_key = os.getenv('DJANGO_SECRET_KEY')
+
+admin_token = os.getenv('ADMIN_TOKEN')

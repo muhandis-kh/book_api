@@ -11,7 +11,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response 
 from rest_framework.status import HTTP_200_OK, HTTP_201_CREATED, HTTP_404_NOT_FOUND
 from .renderers import UserRenderer
-
+from book_api.api.throttles import CustomUserRateThrottle, CustomBearerTokenRateThrottle
     
 class FileBookViewset(viewsets.ModelViewSet):
     queryset = FileBook.objects.all()
@@ -19,6 +19,7 @@ class FileBookViewset(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated, IsAdminUserOrReadOnly]
     filter_backends = [filters.SearchFilter]
     search_fields = ['@document_filename', '@description']
+    throttle_classes  = [CustomBearerTokenRateThrottle]
     
 class AudioBookViewset(viewsets.ModelViewSet):
     queryset = AudioBook.objects.all()
@@ -26,6 +27,7 @@ class AudioBookViewset(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated, IsAdminUserOrReadOnly]
     filter_backends = [filters.SearchFilter]
     search_fields = ['@document_filename', '@description']
+    throttle_classes  = [CustomBearerTokenRateThrottle]
     
 class FileBookAPIView(ListAPIView):
     queryset = FileBook.objects.all()
@@ -33,6 +35,7 @@ class FileBookAPIView(ListAPIView):
     permission_classes = [AllowAny]
     filter_backends = [filters.SearchFilter]
     search_fields = ['@document_filename', '@description']
+    throttle_classes  = [CustomBearerTokenRateThrottle]
     
 class AudioBookAPIView(ListAPIView):
     queryset = AudioBook.objects.all()
@@ -40,6 +43,7 @@ class AudioBookAPIView(ListAPIView):
     permission_classes = [AllowAny]
     filter_backends = [filters.SearchFilter]
     search_fields = ['@document_filename', '@description']
+    throttle_classes  = [CustomUserRateThrottle]
 
     
 class AuthorViewset(viewsets.ModelViewSet):
