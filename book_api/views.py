@@ -18,7 +18,7 @@ class FileBookViewset(viewsets.ModelViewSet):
     serializer_class = FileBookSerializer
     permission_classes = [IsAuthenticated, IsAdminUserOrReadOnly]
     filter_backends = [filters.SearchFilter, CustomStatusFilter]
-    search_fields = ['=document_filename', '@description', '@slug']
+    search_fields = ['@document_filename', '@description', '@slug']
     throttle_classes  = [CustomBearerTokenRateThrottle]
     
 class AudioBookViewset(viewsets.ModelViewSet):
@@ -26,7 +26,7 @@ class AudioBookViewset(viewsets.ModelViewSet):
     serializer_class = AudioBookSerializer
     permission_classes = [IsAuthenticated, IsAdminUserOrReadOnly]
     filter_backends = [filters.SearchFilter, CustomStatusFilter]
-    search_fields = ['=document_filename', '@description', '@slug' ]
+    search_fields = ['@document_filename', '@description', '@slug']
     throttle_classes  = [CustomBearerTokenRateThrottle]
     
 class FileBookAPIView(ListAPIView):
