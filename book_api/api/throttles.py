@@ -2,7 +2,7 @@ from rest_framework.throttling import UserRateThrottle
 from data.data import admin_token
 
 class CustomUserRateThrottle(UserRateThrottle):
-    rate = "10/minute" 
+    rate = "100/day" 
        
     def allow_request(self, request, view):
         # "X-Is-Admin" başlığı kontrolü ekleyin
@@ -13,7 +13,7 @@ class CustomUserRateThrottle(UserRateThrottle):
     
 
 class CustomBearerTokenRateThrottle(UserRateThrottle):
-    rate = '10/minute'  # Özel sınıflandırma oranını ayarlayın
+    rate = '100/day'  # Özel sınıflandırma oranını ayarlayın
 
     def allow_request(self, request, view):
         # İstek başlığında "Authorization" bulunmalı ve "Bearer " ile başlamalı
