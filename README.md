@@ -38,10 +38,10 @@ Iltimos bu haqida menga xabar bering
 > bo'lsangiz, xatolik haqida [xabardor](https://github.com/okh-engineer/book_api/issues/new)
 > qilishni unutmang.
 
-Loyiha demo holatda http://mlibrary.up.railway.app/api/file-book-api/ ushbu manzilda ishlamoqda. Loyiha bepul serverda joylashganligi va resurslar cheklanganligi uchun loyihadan foydalanish uchun ro'yhatdan o'tish talab qilinadi. 
+Loyihani demo holatda https://mlibrary.up.railway.app/api/file-book-api/?search=query ushbu manzilga query o'rniga kitob nomini kiritish orqali ishlatib ko'rish mumkin. Loyiha bepul serverda joylashganligi va resurslar cheklanganligi uchun loyihadan foydalanish uchun ro'yhatdan o'tish talab qilinadi. 
 API kalit uchun <a href="https://t.me/khojimirzayev">menga</a> telegram orqali aloqaga chiqing.
 
-Tez orada loyiha asosida telegram bot ishlab chiqiladi.
+Tez orada loyiha asosida telegram bot va web-sahifa ishlab chiqiladi.
 
 Rahmat
 
