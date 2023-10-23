@@ -3,6 +3,8 @@ This Book API project
 
 Ushbu loyiha telegramdagi kitob tarqatuvchi kanal va guruhlardagi kitoblarni bir joyga jamlash, ularni oson saralash uchun yaratildi. 
 
+## Foydalanilgan kanal/guruhlar
+
 Loyihadagi kitob fayllarini olishda quyidagi telegram kanallardan foydalanildi:
   1. TKTI_library
   2. kitobN11
@@ -23,10 +25,16 @@ Loyihadagi kitob fayllarini olishda quyidagi telegram kanallardan foydalanildi:
   17 .KitoblarBazas
 va barcha fayllar ostiga kanal manzili biriktirildi.
 
+## Loyiha haqida
+
 Loyiha 83 ming dan ortiq kitob, maqola, testlar to'plamlarining fayllarini va 17 mingdan ortiq audio formatdagi kitoblarni o'z ichiga oladi.
 
 Loyihani yaratishda mualliflik huquqlarini e'tiborga olishga harakat qilindi. Loyiha 83 mingdan ziyod fayldan tashkil topganini hisobga olib bazi kitoblar o'tkazib yuborilgan bo'lishi mumkin.
 Iltimos bu haqida menga xabar bering
+
+> Bu loyiha hozir sinov bosqichidan o'tmoqda. Agarda biror xatolikka duchor
+> bo'lsangiz, xatolik haqida [xabardor](https://github.com/okh-engineer/book_api/issues/new)
+> qilishni unutmang.
 
 Loyiha demo holatda http://mlibrary.up.railway.app/api/file-book-api/ ushbu manzilda ishlamoqda. Loyiha bepul serverda joylashganligi va resurslar cheklanganligi uchun loyihadan foydalanish uchun ro'yhatdan o'tish talab qilinadi. 
 API kalit uchun <a href="https://t.me/khojimirzayev">menga</a> telegram orqali aloqaga chiqing.
