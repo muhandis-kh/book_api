@@ -1,7 +1,7 @@
 # book_api
 This Book API project
 
-[![GitHub top language](https://img.shields.io/github/languages/top/uzinfocom-org/korrektor?style=flat-square&logo=github)](https://github.com/okh-engineer/book_api)
+[![GitHub top language](https://img.shields.io/github/languages/top/okh-engineer/book_api?style=flat-square&logo=github)](https://github.com/okh-engineer/book_api)
 
 Ushbu loyiha telegramdagi kitob tarqatuvchi kanal va guruhlardagi kitoblarni bir joyga jamlash, ularni oson saralash uchun yaratildi. 
 
