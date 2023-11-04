@@ -13,7 +13,7 @@ class CustomUserRateThrottle(UserRateThrottle):
     
 
 class CustomBearerTokenRateThrottle(UserRateThrottle):
-    rate = '100/day'  # Özel sınıflandırma oranını ayarlayın
+    rate = '10/day'  # Özel sınıflandırma oranını ayarlayın
 
     def allow_request(self, request, view):
         # İstek başlığında "Authorization" bulunmalı ve "Bearer " ile başlamalı
