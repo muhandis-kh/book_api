@@ -51,8 +51,8 @@ API kalit uchun <a href="https://t.me/khojimirzayev">menga</a> telegram orqali a
   <summary>
     1-muammo. Ma'lumotlarni jamlash va saralash
   </summary>
-  
-    <ul>
+  <br>
+  <ul>
       <li>
         Telegramdagi bir qancha kitob tarqatuvchi kanal va guruhlar bor va ulardagi kitob ma'lumotlarini yaratilgan model asosida ma'lumotlar omboriga qo'shish kerak. Albatta kitoblar fayllari 80 mingdan ko'p ekanligini hisobga olganda buni manual holatda bajarish imkonsiz
       </li>
