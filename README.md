@@ -1,4 +1,4 @@
-![image](https://github.com/muhandis-kh/book_api/assets/77358564/a5fc4f26-2fd4-4908-a7c0-c0b99331e983)# book_api
+# book_api
 This Book API project
 
 [![GitHub top language](https://img.shields.io/github/languages/top/okh-engineer/book_api?style=flat-square&logo=github)](https://github.com/okh-engineer/book_api)
