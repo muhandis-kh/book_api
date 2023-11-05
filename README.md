@@ -45,6 +45,13 @@ Iltimos bu haqida menga xabar bering
 Loyihani demo holatda https://mlibrary.up.railway.app/api/file-book-api/?search=query ushbu manzilga query o'rniga kitob nomini kiritish orqali ishlatib ko'rish mumkin. Loyiha bepul serverda joylashganligi va resurslar cheklanganligi uchun loyihadan foydalanish uchun ro'yhatdan o'tish talab qilinadi. 
 API kalit uchun <a href="https://t.me/khojimirzayev">menga</a> telegram orqali aloqaga chiqing.
 
+<details>
+  <summary>
+    Loyihani ishlab chiqishda uchralgan qiyinchiliklar va yechimlari STAR metodi orqali
+  </summary>
+  
+</details>
+
 Loyihani telegram orqali ham https://t.me/mobilkutubxona_bot ushbu bot orqali ishlatib ko'rishingiz mumkin. Xatoliklar haqida iltimos xabar bering.
 
 Rahmat
