@@ -58,16 +58,17 @@ API kalit uchun <a href="https://t.me/khojimirzayev">menga</a> telegram orqali a
         Bu ma'lumotlarni python orqali yig'ib, uni kod orqali ma'lumotlar bazasiga qo'shmoqchi bo'ldim
       </li>
       <li>
-        <ol>
+        <ol type=numeric>
          <li>Buning uchun internetda mavjud bo'lgan resurslardan foydalanish uchun izlanish o'tkardim va bir nechta yechimlar ichidan https://github.com/estebanpdl/telegram-tracker bu repositoryda joylashgan koddan foydalanishga qaror qildim, sababi uchbu kod orqali bir nechta kanaldagi ma'lumotlarni bitta faylda to'plash mumkin edi. Bu esa kod orqali fayllarni boshqarishni osonlashtirdi
          </li>
           <li>
             Barcha ma'lumotlarni bitta faylda yig'ildani yaxshi lekin bu fayl hajmi githubning fayl limitidan oshib ketdi, men fayllarni ma'lumotlar bazasiga qo'shish uchun online serverdan foydalanmoqchiligim uchun u fayl github repo sida bo'lishi kerak edi. Men nega fayl hajmi bunchalik katta bo'lganligini sabablarini qidirdim. Fayl hajmi katta ekanligiga sabab yuqoridagi data scraper telegram kanaldagi barcha xabarlar ma'lumotlarini olib faylga joylagani edi ya'ni mening faylimda kanalga yuborilgan text, audio, reklama, sticker va shunga o'xshash xabarlarning barchasi mavjud edi. Men bu fayldagi ma'lumotlarni saralashim va fayl turiga qarab alohida faylga joylashim kerak edi. Buning uchun Pandas kutubxonasidan foydalandim, bunu ishlatishda internetdagi ma'lumotlar va ChatGPT katta yordam berdi.
           </li>
-          <li>
+
+        </ol>   
+      <li>
             Saralash yakunlangandan so'ng endi menda limitni oshmagan va faqatgina kerakli ma'lumotlardan tashkil topgan fayl bor edi. Buning natijasida online serverda ma'lumotlarni qo'shishim mumkin edi
-          </li>
-        </ol>    
+      </li>
       </li>
     </ul>
   </details>
