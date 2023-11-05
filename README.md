@@ -5,8 +5,9 @@ This Book API project
 
 Ushbu loyiha telegramdagi kitob tarqatuvchi kanal va guruhlardagi kitoblarni bir joyga jamlash, ularni oson saralash uchun yaratildi. 
 
+## Foydalanilgan kanal/guruhlar
 <details>
-<summary>Foydalanilgan kanal/guruhlar</summary>
+<summary>🔽🔽</summary>
 <ol>
 Loyihadagi kitob fayllarini olishda quyidagi telegram kanallardan foydalanildi
   <li>TKTI_library</li>
