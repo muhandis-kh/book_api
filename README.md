@@ -48,7 +48,7 @@ API kalit uchun <a href="https://t.me/khojimirzayev">menga</a> telegram orqali a
 ## Loyihani ishlab chiqishda uchralgan qiyinchiliklar va yechimlari STAR metodi orqali
 <details>
   <summary>
-    1-muammo
+    1-muammo. Ma'lumotlarni jamlash va saralash
   </summary>
     <ul>
       <li>
