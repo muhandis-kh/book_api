@@ -7,27 +7,27 @@ Ushbu loyiha telegramdagi kitob tarqatuvchi kanal va guruhlardagi kitoblarni bir
 
 <details>
 <summary>Foydalanilgan kanal/guruhlar</summary>
-<ul>
+<ol>
 Loyihadagi kitob fayllarini olishda quyidagi telegram kanallardan foydalanildi
-  <li>1. TKTI_library</li>
-  2. kitobN11
-  3. KITOBLAR_BAZASI
-  4. audio_kitobxona
-  5. Elektron_pdf_islomiy_kitoblar_ap
-  6. kutubxona_kitoblar_audio_elektro
-  7. kitoblar_baza
-  8. kitoblar_bazam
-  9. kitoblar_bazasi
-  10. KITOBLAR_BAZASl
-  11. URGUT_KUTUBXONA_KITOBLAR_BAZASI
-  12. Audio_Kutubxona_uz
-  13. audio_Apk_kutubxona_pdf_kitoblar
-  14. e_kutubxona
-  15. audiokitob_eshitamiz
-  16. kutubxona7
-  17 .KitoblarBazas
+  <li>TKTI_library</li>
+  <li>kitobN11</li>
+  <li>KITOBLAR_BAZASI</li>
+  <li>audio_kitobxona</li>
+  <li> Elektron_pdf_islomiy_kitoblar_ap</li>
+  <li> kutubxona_kitoblar_audio_elektro</li>
+  <li> kitoblar_baza</li>
+  <li>kitoblar_bazam</li>
+  <li>kitoblar_bazasi</li>
+  <li>KITOBLAR_BAZASl</li>
+  <li>URGUT_KUTUBXONA_KITOBLAR_BAZASI</li>
+  <li>Audio_Kutubxona_uz</li>
+  <li>audio_Apk_kutubxona_pdf_kitoblar</li>
+  <li>e_kutubxona</li>
+  <li>audiokitob_eshitamiz</li>
+  <li>kutubxona7</li>
+  <li>KitoblarBazas</li>
 va barcha fayllar ostiga kanal manzili biriktirildi.
-</ul>
+</ol>
 </details>
 
 
