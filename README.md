@@ -7,7 +7,8 @@ Ushbu loyiha telegramdagi kitob tarqatuvchi kanal va guruhlardagi kitoblarni bir
 
 <details>
 <summary>Foydalanilgan kanal/guruhlar</summary>
-Loyihadagi kitob fayllarini olishda quyidagi telegram kanallardan foydalanildi:
+<ul>
+Loyihadagi kitob fayllarini olishda quyidagi telegram kanallardan foydalanildi
   1. TKTI_library
   2. kitobN11
   3. KITOBLAR_BAZASI
@@ -26,7 +27,7 @@ Loyihadagi kitob fayllarini olishda quyidagi telegram kanallardan foydalanildi:
   16. kutubxona7
   17 .KitoblarBazas
 va barcha fayllar ostiga kanal manzili biriktirildi.
-
+</ul>
 </details>
 
 
