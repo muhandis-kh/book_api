@@ -7,9 +7,9 @@ Ushbu loyiha telegramdagi kitob tarqatuvchi kanal va guruhlardagi kitoblarni bir
 
 ## Foydalanilgan kanal/guruhlar
 <details>
-<summary>🔽🔽</summary>
+<summary>Loyihadagi kitob fayllarini olishda quyidagi telegram kanallardan foydalanildi</summary>
 <ol>
-Loyihadagi kitob fayllarini olishda quyidagi telegram kanallardan foydalanildi
+
   <li>TKTI_library</li>
   <li>kitobN11</li>
   <li>KITOBLAR_BAZASI</li>
