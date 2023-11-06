@@ -43,8 +43,7 @@ Iltimos bu haqida menga xabar bering
 > bo'lsangiz, xatolik haqida [xabardor](https://github.com/okh-engineer/book_api/issues/new)
 > qilishni unutmang.
 
-Loyihani demo holatda https://mlibrary.up.railway.app/api/file-book-api/?search=query ushbu manzilga query o'rniga kitob nomini kiritish orqali ishlatib ko'rish mumkin. Loyiha bepul serverda joylashganligi va resurslar cheklanganligi uchun loyihadan foydalanish uchun ro'yhatdan o'tish talab qilinadi. 
-API kalit uchun <a href="https://t.me/khojimirzayev">menga</a> telegram orqali aloqaga chiqing.
+Loyihani demo holatda https://mlibrary.up.railway.app/api/file-book-api/?search=query ushbu manzilga query o'rniga kitob nomini kiritish orqali ishlatib ko'rish mumkin. Loyiha bepul serverda joylashganligi va resurslar cheklanganligi uchun loyihadan foydalanish kunlik 10 ta so'rov bilan cheklangan.
 
 ## Loyihani ishlab chiqishda uchralgan qiyinchiliklar va yechimlari STAR metodi orqali
 <details>
@@ -65,6 +64,27 @@ API kalit uchun <a href="https://t.me/khojimirzayev">menga</a> telegram orqali a
       </li>
       <li>
       Saralash yakunlangandan so'ng endi menda limitni oshmagan va faqatgina kerakli ma'lumotlardan tashkil topgan fayl bor edi. Buning natijasida online serverda ma'lumotlarni qo'shishim mumkin edi
+      </li>
+    </ul>
+</details>
+
+<details>  
+  <summary>
+    2-muammo. Fayllarni yagona telegram kanalda to'plash va ularning nomlarini lotin alifbosiga o'tkazish
+  </summary>
+    <br>
+    <ul>
+      <li>
+        Loyihada kitob nomlari kirill va lotin alifbosida yozilgan edi va bu ma'lumotlar omboridan kitoblarni saralashda qiyinchilik tug'dirdi va kitob fayllari ko'plab kanallarda joylashganligi ularni yo'qolib qolish havfini oshirdi.
+      </li>
+      <li>
+        Loyihadagi fayllarni saralash oson bo'lishi uchun fayllar ismini lotin alifbosiga o'tkazishim va fayllarni barchasini yagona telegram kanalda to'plashim kerak edi.
+      </li>
+      <li>
+        Ma'lumotlar bazasiga model asosida kitob ma'lumotlarini kiritishdan oldin kitob nomlari kiril alifbosida ekanligi yoki emasligini tekshirishim kerak edi. Buning uchun internetdan yozuv alifbosini aniqlash uchun sodda funksiya topdim va uni ishlatib ko'rdim, hammasi joyida funksiya ishladi. Endi aniqlangan kirill alifbosidagi kitob nomlarini lotin alifbosiga o'tkazishim kerak edi. Buning uchun avvalroq eshitganim <a href="https://korrektor.uz/">korrektor.uz</a> loyihasidan foydalandim, to'g'risi loyiha asosida python kutubxonasi ishlab chiqilgani va korrektor.uz dan foydalanish Uzinfocom tufayli bepul bo'lgani menga juda qo'l keldi. Barcha fayl nomlari lotin alifbosida ma'lumotlar bazasiga joylanganidan so'ng bu ma'lumotlar asosida barcha fayllarni yagona telegram kanalda to'plash uchun telegram bot kodladim va uni ishga tushirdim.
+      </li>
+      <li>
+        Bu ishlarning tufayli endi loyihadagi barcha fayl nomlari lotin alifbosida saqlangan va ularni saralash osonlashgan edi. Yana fayllar yo'qolib qolmasligi uchun barcha fayllar yagona telegram kanalda muvaffiqiyatli joylandi.
       </li>
     </ul>
 </details>
