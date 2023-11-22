@@ -1,8 +1,8 @@
 # book_api
 This Book API project
 
-[!NOTE]
-Loyiha demo holatda
+> [!NOTE]
+> Loyiha demo holatda
 
 [![GitHub top language](https://img.shields.io/github/languages/top/okh-engineer/book_api?style=flat-square&logo=github)](https://github.com/okh-engineer/book_api)
 
